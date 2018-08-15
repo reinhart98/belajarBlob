@@ -1,0 +1,17 @@
+Help on method command_alias in module pytg.sender:
+
+ccoommmmaanndd__aalliiaass(self, *args, **kwargs) unbound pytg.sender.Sender method
+    `def get_self()`
+    get our user info
+    
+    Arguments:
+            No arguments.
+    
+    Keyword arguments:
+            `enable_preview`: optional, if the URL found in a message should have a preview. Default: False. (Will be ignored by the CLI with non-sending commands.)
+            `retry_connect`: optional. How long, in seconds, we wait for the cli to answer the send command. Set to explicitly to `None` to use the global default timeout (`Sender.default_answer_timeout`) instead of the default timeout for the given command. To use the default timeout for that command omit this parameter. Default: default timeout for the given command
+            `result_timeout`: optional, how often the initial connection should be retried. Default: 2. Negative number means infinite.
+            `reply_id`: optional, this command is kept for compatibility. Please use the reply commands! Default: None. (Will be ignored by the CLI with non-sending commands.)
+    
+    Returns:
+            the parsed result using pytg.result_parser.anything parser or raises an pytg.exceptions.IllegalResponseExceptions.
