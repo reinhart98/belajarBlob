@@ -38,6 +38,7 @@ while fps._numFrames < args["num_frames"]:
 fps.stop()
 print("[INFO] elasped time: {:.2f}".format(fps.elapsed()))
 print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
+print("num of frame : {:.2f}".format(fps.numframe()))
  
 # do a bit of cleanup
 stream.release()
@@ -68,6 +69,7 @@ while fps._numFrames < args["num_frames"]:
 fps.stop()
 print("[INFO] elasped time: {:.2f}".format(fps.elapsed()))
 print("[INFO] approx. FPS: {:.2f}".format(fps.fps()))
+print("num of frame : {:.2f}".format(fps.numframe()))
  
 # do a bit of cleanup
 cv2.destroyAllWindows()
